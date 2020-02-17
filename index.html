@@ -19,149 +19,245 @@
   <meta property="og:description" content="Selected Work by Mika Schalks">
   <meta property="og:url" content="www.mika.computer">
 
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="test.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="test.js"></script>
 
 </head>
 
 <body>
 
 
-  <div>
-    <p class="pop-up"><img src="images/henk.jpg"></p>
+  <!-- Header -->
+  <div class="header">
+    <div class="top">
+      <div class="column">
+        Mika Schalks
+      </div>
+      <div class="column">
+        Contact
+      </div>
+
+      <div class="column">
+        Backstage
+      </div>
+    </div>
+
+  </div>
+
+  <div id="start" class="pop-up">
+    <div class="top">
+      <p>lalala</p>
+      <img draggable="false" src="media/laura.png" class="cross">
+    </div>
+    <div id="pickle">
+      <img draggable="false" src="media/pickle.jpg" class="image">
+    </div>
+    <div id="laura">
+      <img draggable="false" src="media/laura.png" class="image">
+    </div>
   </div>
 
 
-  <nav class="col-1 col-s-1">
-    <div class="menu">
-      <div><a href="index.html">Mika Schalks</a></div>
-      <div><a href="#footer">Contact</a></div>
-      <div><a href="#portfolio">Portfolio</a></div>
-      <div><a class="chaos" href="">Chaos</a></div>
+
+  <!-- Photo Grid -->
+  <div class="row" id="halfrow">
+    <div class="column" id="halfcolumn1">
+      <a href="#pickle">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Be in a pickle!
+             <br />
+             <br />
+             Fashion<br />
+             Photography
+           </div>
+
+          <img daggable="false" src="media/pickle.jpg" class="image">
+        </div>
+        </div>
+      </a>
+      <a href="#laura">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/laura.png" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/mysterious.png" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/absurdity.jpg" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/prismatic.png" class="image">
+          </div>
+        </div>
+      </a>
     </div>
+    <div class="column" id="halfcolumn2">
+      <a href="#pickle">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Be in a pickle!
+             <br />
+             <br />
+             Fashion<br />
+             Photography
+           </div>
 
-    <div class="menu-content">
-      <ul>
-       <a id="portfolio" href="#Project1">
-         <div class="container">
-           <div class="title">Pickle</div>
-           <img src="media/pickle.jpg">
-         </div>
-       </a>
-
-        <a href="#Project2">
-          <div class="container">
-            <div class="title">Lookbook</div>
-            <img src="media/laura.png">
+          <img daggable="false" src="media/pickle.jpg" class="image">
+        </div>
+        </div>
+      </a>
+      <a href="#laura">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/laura.png" class="image">
           </div>
-        </a>
-
-        <a href="#Project3">
-          <div class="container">
-            <div class="title">Unknown</div>
-            <img src="media/mysterious.png">
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/mysterious.png" class="image">
           </div>
-        </a>
-
-        <a href="#Project4">
-          <div class="container">
-            <div class="title">Project 4</div>
-            <img src="images/h.jpg">
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/absurdity.jpg" class="image">
           </div>
-        </a>
-
-        <a href="#Project5">
-          <div class="container">
-            <div class="title">Project 5</div>
-            <img src="images/h.jpg">
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/prismatic.png" class="image">
           </div>
-        </a>
-
-        <a href="#Project6">
-          <div class="container">
-            <div class="title">Project 6</div>
-            <img src="images/h.jpg">
-          </div>
-        </a>
-
-      </ul>
+        </div>
+      </a>
     </div>
+    <div class="column" id="halfcolumn3">
+      <a href="#pickle">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Be in a pickle!
+             <br />
+             <br />
+             Fashion<br />
+             Photography
+           </div>
 
+          <img daggable="false" src="media/pickle.jpg" class="image">
+        </div>
+        </div>
+      </a>
+      <a href="#laura">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/laura.png" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/mysterious.png" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/absurdity.jpg" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/prismatic.png" class="image">
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="column" id="halfcolumn4">
+      <a href="#pickle">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Be in a pickle!
+             <br />
+             <br />
+             Fashion<br />
+             Photography
+           </div>
 
-  </nav>
-
-
-
-  <aside class="col-2 col-s-2">
-
-    <section class="content">
-
-
-      <article data="Name1">
-        <p id="Project1">Project 1
-          <div class="description"><h1>This is a description</h1></div>
-        </p>
-        <div>
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-     </div>
-      </article>
-      <article data="Name2">
-        <p id="Project2">Project 2</p>
-        <div>
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-     </div>
-      </article>
-      <article data="Name3">
-        <p id="Project3">Project 3</p>
-        <div>
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-     </div>
-      </article>
-      <article data="Name4">
-        <p id="Project4">Project 4</p>
-        <div>
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-     </div>
-      </article>
-      <article data="Name5">
-        <p id="Project5">Project 5</p>
-        <div>
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-     </div>
-      </article>
-      <article data="Name6">
-        <p id="Project6">Project 6</p>
-        <div>
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-          <img src="media/project1.jpg">
-     </div>
-      </article>
-
-
-      <article id=resume>Resume
-
-      </article>
-
-
-      <article id=footer>Contact Information
-        <li><a href="https://www.instagram.com/mikaschalks" target="_blank">Instagram</a></li>
-      </article>
-    </section>
-
-  </aside>
+          <img daggable="false" src="media/pickle.jpg" class="image">
+        </div>
+        </div>
+      </a>
+      <a href="#laura">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/laura.png" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/mysterious.png" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/absurdity.jpg" class="image">
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="grid">
+          <div class="block">
+           <div class="blocktext">Title</div>
+           <img draggable="false" src="media/prismatic.png" class="image">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
 </body>
 

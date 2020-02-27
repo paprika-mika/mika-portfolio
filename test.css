@@ -478,6 +478,7 @@ text-decoration: none
     width: 100vw;
     border-left-style: hidden;
     top:40px;
+    left: 0px;
     border:0pt solid var(--black-full);
   }
 

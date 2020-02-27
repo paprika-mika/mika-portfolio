@@ -17,7 +17,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".button").on('click touchstart', function () {
+  $(".button").on('click tap touchstart', function () {
     document.documentElement.style.setProperty('--white-full', 'rgb(0,255,0)');
   });
 });

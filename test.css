@@ -26,7 +26,7 @@ body {
   cursor: url(pointer.png), auto;
   background-image: url(background.png);
   background-repeat: repeat;
-
+  background-attachment: fixed;
 }
 
 img{

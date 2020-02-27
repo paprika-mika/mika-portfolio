@@ -16,6 +16,12 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $(".button").click(function(){
+    document.documentElement.style.setProperty('--white-full', 'rgb(0,255,0)');
+  });
+});
+
 
 
 $( function() {

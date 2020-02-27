@@ -519,6 +519,7 @@ text-decoration: none
   .plus:after{
     height: 2px;
   }
+  
 
   .plus-reverse{
     transform: rotate(0deg);

@@ -458,6 +458,10 @@ text-decoration: none
 
 }
 
+.topunder{
+  position:absolute;
+}
+
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -519,10 +523,14 @@ text-decoration: none
   .plus:after{
     height: 2px;
   }
-  
+
 
   .plus-reverse{
     transform: rotate(0deg);
 
+  }
+
+  .topunder{
+    position:absolute;
   }
 }

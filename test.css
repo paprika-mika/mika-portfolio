@@ -162,6 +162,14 @@ display:none;
   z-index: 2;
 }
 
+.toptext > a :hover{
+  text-decoration: underline;
+}
+
+.topundertext > a:hover{
+  text-decoration: underline;
+}
+
 
 .button{
   display: inline-block;
@@ -265,7 +273,6 @@ display:none;
 }
 
 .block:active{
-  background-color: var(--black-full);
   z-index: 5;
 }
 
@@ -479,7 +486,7 @@ text-decoration: none
   }
 
   .row-half {
-    width: 100%;
+    width: 80%;
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */

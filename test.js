@@ -19,6 +19,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".button").on('click tap touchstart', function () {
     document.documentElement.style.setProperty('--white-full', 'rgb(0,255,0)');
+    document.documentElement.style.setProperty('--black-full', 'rgb(0,0,255)');
   });
 });
 

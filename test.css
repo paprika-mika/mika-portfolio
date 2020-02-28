@@ -179,8 +179,9 @@ display:none;
   margin-left: 150px;
   font-size: var(--font-size-l);
   color: var(--black-full);
-  background-color: var(--white-full);
-  border:1pt solid var(--black-full);
+  background-color: rgb(0,255,0);
+  border-style:  inset;
+
 }
 
 .cross{

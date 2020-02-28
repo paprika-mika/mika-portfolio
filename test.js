@@ -17,9 +17,53 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".button").on('click tap touchstart', function () {
+  $("#green").on('click tap touchstart', function () {
     document.documentElement.style.setProperty('--white-full', 'rgb(0,255,0)');
-    document.documentElement.style.setProperty('--black-full', 'rgb(0,0,255)');
+  });
+  $("#chaos").on('click tap touchstart', function () {
+    $("#work_1").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_2").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_3").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_4").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_5").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_6").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_7").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_8").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_9").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_10").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_11").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_12").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_13").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_14").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_15").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_16").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_17").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_18").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_19").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $("#work_20").css({"left": (-200 + Math.floor(Math.random() * 400)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+  });
+
+  $("#clean").on('click tap touchstart', function () {
+    $("#work_1").css({"left": "0", "top": "0"});
+    $("#work_2").css({"left": "0", "top": "0"});
+    $("#work_3").css({"left": "0", "top": "0"});
+    $("#work_4").css({"left": "0", "top": "0"});
+    $("#work_5").css({"left": "0", "top": "0"});
+    $("#work_6").css({"left": "0", "top": "0"});
+    $("#work_7").css({"left": "0", "top": "0"});
+    $("#work_8").css({"left": "0", "top": "0"});
+    $("#work_9").css({"left": "0", "top": "0"});
+    $("#work_10").css({"left": "0", "top": "0"});
+    $("#work_11").css({"left": "0", "top": "0"});
+    $("#work_12").css({"left": "0", "top": "0"});
+    $("#work_13").css({"left": "0", "top": "0"});
+    $("#work_14").css({"left": "0", "top": "0"});
+    $("#work_15").css({"left": "0", "top": "0"});
+    $("#work_16").css({"left": "0", "top": "0"});
+    $("#work_17").css({"left": "0", "top": "0"});
+    $("#work_18").css({"left": "0", "top": "0"});
+    $("#work_19").css({"left": "0", "top": "0"});
+    $("#work_20").css({"left": "0", "top": "0"});
   });
 });
 
@@ -33,20 +77,7 @@ $( function() {
 
 
 
-(function($){
 
-	$(document).ready(function() {
-		var classes = [ 'style1', 'style2', 'style3', 'style4', 'style5', 'style6' ]; // the classes you want to add
-		$('#chaos').click(function(i) { // the element(s) you want to add the class to.
-			$('#work_1').toggleClass(classes[ Math.floor( Math.random()*classes.length ) ] );
-      $('#work_2').toggleClass(classes[ Math.floor( Math.random()*classes.length ) ] );
-      $('#work_3').toggleClass(classes[ Math.floor( Math.random()*classes.length ) ] );
-      $('#work_4').toggleClass(classes[ Math.floor( Math.random()*classes.length ) ] );
-      $('#work_5').toggleClass(classes[ Math.floor( Math.random()*classes.length ) ] );
-		});
-	});
-
-})(jQuery);
 
 
 var scrollEventHandler = function()

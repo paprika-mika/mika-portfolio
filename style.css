@@ -517,6 +517,7 @@ text-shadow: 5px 5px 0px rgba(0,0,0);
   border:1pt solid var(--black-full);
   width:100%;
   margin-top: -1pt;
+    font-family: Narrow, "ArialNarrow", sans-serif;
 
   margin-bottom: -1pt;
   padding-left: 7px;

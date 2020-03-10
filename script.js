@@ -167,8 +167,8 @@ $(document).ready(function(){
 });
 
 $( function() {
-      $( ".block" ).draggable({ grid: [ 10, 10 ] });
-      $( ".colorblock" ).draggable({ grid: [ 10, 10 ] });
+      $( ".block" ).draggable({ grid: [ 10, 10 ], cancel: ".image"});
+
 
       $( "div, p, img, .image, .test" ).disableSelection();
 } );

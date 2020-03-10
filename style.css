@@ -3,7 +3,7 @@
     --font-size-xl: 60pt;
     --font-size-s: 12pt;
     --line-height1: 20pt;
-    --yellow-full: rgb(255, 255, 0);
+    --yellow-full: rgb(255, 99, 239);
     --white-full: rgb(255, 255, 255);
     --black-full: rgb(0, 0, 0);
 }
@@ -54,12 +54,12 @@ body {
   background-image: url(media/background5.png);
 }
 
-img{
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--o-user-select: none;
-user-select: none;
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 
 ::-webkit-scrollbar {
@@ -69,11 +69,23 @@ user-select: none;
 
 .footer {
   width: 100vw;
-  height: 160px;
+  height: 250px;
   background-color: var(--white-full);
   border-top: 1pt solid var(--black-full);
   margin-top: 30px;
   position: relative;
+}
+
+.bottomtext{
+  color: var(--black-full);
+  text-transform: uppercase;
+  font-size: var(--font-size-xl);
+  font-family: Dots, sans-serif;
+  line-height: 50%;
+  text-align: center;
+  margin:auto;
+
+
 }
 
 .header{
@@ -171,10 +183,15 @@ display:none;
 .toptext:hover > a{
   -webkit-text-stroke-color: var(--black-full);
   -webkit-text-fill-color: var(--yellow-full);
+  text-shadow: 5px 5px 0px var(--black-full);
 }
 
 .toptext > a:active{
-text-shadow: 5px 5px 0px rgba(0,0,0);
+-webkit-text-fill-color: var(--black-full);
+}
+
+#click > a{
+  content: 'Mika';
 }
 
 #settings{
@@ -192,12 +209,16 @@ text-shadow: 5px 5px 0px rgba(0,0,0);
   display: block;
   font-family: Dots, sans-serif;
  position:fixed;
- top: 130px;
+ top: 145px;
  padding: 40px;
- margin: 15px;
+ margin-left: 15px;
  width: 48.5%;
  height: 260px;
  z-index: 5;
+
+ box-shadow: 2pt 2pt 0px var(--black-full);
+ -moz-box-shadow: 2pt 2pt 0px var(--black-full);
+ -webkit-box-shadow: 2pt 2pt 0px var(--black-full);
 }
 
 .topundertext{
@@ -344,6 +365,50 @@ text-shadow: 5px 5px 0px rgba(0,0,0);
   cursor: move;
 }
 
+.project{
+  display:  inline-block;
+}
+
+.text{
+  width: 100%;
+ color: var(--white-full)
+}
+
+.text > h1{
+  margin-left: 10px;
+  margin-top: 12px;
+  text-transform: uppercase;
+  font-size: 44pt;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  line-height: 110%;;
+
+  -webkit-text-stroke-width: 0.5pt;
+  -webkit-text-stroke-color: var(--white-full);
+  -webkit-text-fill-color: var(--black-full);
+}
+
+.projectimage{
+  position: inherit;
+  width:100%;
+  height:auto;
+  float: left;
+  padding: 1pt
+}
+
+.projectimagehalf{
+  position: inherit;
+  width:49.9%;
+  height:auto;
+  float: left;
+  padding: 1pt
+}
+
+
+
+
+
+
+
 .cross{
   position:absolute;
   top: 5px;
@@ -388,16 +453,17 @@ text-shadow: 5px 5px 0px rgba(0,0,0);
 
 .cross-reverse{
   position:absolute;
-  top: 4px;
-  right:5px;
-  height: 30px;
-  width: 30px;
-  /*background-color: var(--white-full);
-  border:1pt solid var(--black-full);*/
+  top: 7px;
+  right:7px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: var(--white-full);
+  border:1pt solid var(--black-full);
 
   /*transition: 0.5s;*/
 }
-
+/*
 .plus-reverse{
   background: var(--black-full);
   height: 30px;
@@ -417,11 +483,15 @@ text-shadow: 5px 5px 0px rgba(0,0,0);
   top: 14px;
   width: 29px;
 }
-
-.block:hover > .blocktext > .cross-reverse > .plus-reverse{
-  transform: rotate(0deg);
-  /*transition:  all 0.5s ease;*/
+*/
+.block:hover > .blocktext > .cross-reverse{
+background-color: var(--yellow-full);
 }
+
+.block:active > .blocktext > .cross-reverse{
+background-color: var(--black-full);
+}
+
 
 .cross-reverse:hover > .plus-reverse:after{
 
@@ -589,11 +659,29 @@ text-decoration: none
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
+  :root {
+      --font-size-xl: 50pt;
+  }
+
+
+
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
+  .topleft{;
+    position:absolute;
+    margin-left: 10px;
+    margin-top: -3px;
+  }
+
+  .topright{
+    position:absolute;
+    margin-right: 10px;
+    top: 140px;
+  }
+
   .column {
     -ms-flex: 50%;
     flex: 50%;
@@ -633,10 +721,6 @@ text-decoration: none
 
 }
 
-.topunder{
-  position:absolute;
-}
-
 #clean{
   display: none;
 }
@@ -656,7 +740,23 @@ text-decoration: none
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
+
+
+  .topleft{;
+    position:absolute;
+    margin-left: 2px;
+    margin-top: -3px;
+  }
+
+  .topright{
+    position:absolute;
+    margin-right: 2px;
+
+    top: 140px;
+
+  }
+
   .column {
     -ms-flex: 100%;
     flex: 100%;
@@ -685,7 +785,7 @@ text-decoration: none
   .pop-up-gone{
     width: 100vw;
     border-left-style: hidden;
-    top:40px;
+    top: 0px;
     left: 0px;
     border:0pt solid var(--black-full);
   }
@@ -702,7 +802,7 @@ text-decoration: none
   }
 
   .topsmall{
-      top:45px;
+      top: 5px;
       right:5px;
       width: 30px;
       height:20px;
@@ -729,9 +829,6 @@ text-decoration: none
 
   }
 
-  .topunder{
-    position:absolute;
-  }
 
   .blocktext{
     display: none;
@@ -749,6 +846,9 @@ text-decoration: none
     display: none;
   }
 }
-/*
-<a href="https://www.instagram.com/mikaschalks" target="_blank">Instagram</a></br>
-<a href="mailto:mika.schalks@gmail.com">Mail</a>
+
+@media screen and (max-width: 315px) {
+  :root {
+      --font-size-xl: 40pt;
+  }
+}

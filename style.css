@@ -134,10 +134,8 @@ display:none;
   border-left-style: solid;
   border-color: var(--black-full);
   border-width: 1pt;
-  /*scroll-behavior: smooth;*/
-
-
 }
+
 
 .topsmall{
   position:fixed;

@@ -126,7 +126,7 @@ $("#sticker").click(function(){
 
 
 $(document).ready(function(){
-  $(".image, .cross-reverse, .menu-button").click(function(){
+  $(".image, .menu-button").click(function(){
     if ($("#halfcolumn1, #halfcolumn2, #halfcolumn3, #halfcolumn4").hasClass("biggrid")) {
       $("#start").removeClass("pop-up").addClass("pop-up-gone");
       $("#portfolio").removeClass("row").addClass("row-half");
@@ -146,7 +146,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".cross").click(function(){
+  $(".cross, .cross-reverse").click(function(){
 
     if ($("#halfcolumn1, #halfcolumn2, #halfcolumn3, #halfcolumn4").hasClass("biggrid-half")) {
       $("#start").removeClass("pop-up-gone").addClass("pop-up");

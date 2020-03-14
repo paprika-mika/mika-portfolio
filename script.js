@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
   $("#settings").click(function(){
     if ($("#topunder").hasClass("topundergone")){
@@ -10,7 +13,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#green").click(function(){
-    document.documentElement.style.setProperty('--white-full', 'rgb(0,255,0)');
+    document.documentElement.style.setProperty('--white-full', 'rgb(0, 255, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
   });
   $("#yellow").click(function(){
@@ -27,7 +30,7 @@ $(document).ready(function(){
   });
   $("#grey").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 0, 255)');
-    document.documentElement.style.setProperty('--black-full', 'rgb(255, 255, 255)');
+    document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
   });
   $("#black").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 0, 0)');
@@ -48,7 +51,7 @@ $("#small").click(function(){
 
 $("#sticker").click(function(){
   if ($("body").hasClass("background0")) {
-  $("body").switchClass("background0", "background1");}
+  $("body").removeClass("background0").addClass("background1");}
    else if ($("body").hasClass("background1")) {
   $("body").switchClass("background1", "background2");}
   else if ($("body").hasClass("background2")) {
@@ -114,12 +117,12 @@ $("#sticker").click(function(){
     $("#work_18").animate({"left": "0", "top": "0"});
     $("#work_19").animate({"left": "0", "top": "0"});
     $("#work_20").animate({"left": "0", "top": "0"});
-    $("#black").css({"transform": "rotate(-180deg)"});
+    $("#black").css({"transform": "rotate(0deg)"});
     $("#white").css({"transform": "rotate(0deg)"});
     $("#red").css({"transform": "rotate(0deg)"});
     $("#yellow").css({"transform": "rotate(0deg)"});
     $("#green").css({"transform": "rotate(0deg)"});
-    $("#grey").css({"transform": "rotate(-10deg)"});
+    $("#grey").css({"transform": "rotate(0deg)"});
   });
 });
 
@@ -168,6 +171,7 @@ $(document).ready(function(){
 
 $( function() {
       $( ".block" ).draggable({ grid: [ 10, 10 ], cancel: ".image"});
+      $( "#topunder" ).draggable({ grid: [ 10, 10 ]});
 
 
       $( "div, p, img, .image, .test" ).disableSelection();

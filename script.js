@@ -1,8 +1,17 @@
+$(document).ready(function(){
+  $("#click, #closephotos").click(function(){
+    if ($("#photosheader").hasClass("photosgone")){
+      $("#photosheader").removeClass("photosgone").addClass("photos");
+  } else if ($("#photosheader").hasClass("photos")){
+    $("#photosheader").removeClass("photos").toggleClass("photosgone");
+  }
+  });
 
+});
 
 
 $(document).ready(function(){
-  $("#settings").click(function(){
+  $("#settings, #closesettings").click(function(){
     if ($("#topunder").hasClass("topundergone")){
       $("#topunder").removeClass("topundergone").addClass("topunder");
   } else if ($("#topunder").hasClass("topunder")){
@@ -143,13 +152,14 @@ $(document).ready(function(){
       $(".topright").css({"right": "49.5%"});
 }
 
+
   });
 
 
 });
 
 $(document).ready(function(){
-  $(".cross, .cross-reverse").click(function(){
+  $("#crossright, .cross-reverse").click(function(){
 
     if ($("#halfcolumn1, #halfcolumn2, #halfcolumn3, #halfcolumn4").hasClass("biggrid-half")) {
       $("#start").removeClass("pop-up-gone").addClass("pop-up");
@@ -171,7 +181,8 @@ $(document).ready(function(){
 
 $( function() {
       $( ".block" ).draggable({ grid: [ 10, 10 ], cancel: ".image"});
-      $( "#topunder" ).draggable({ grid: [ 10, 10 ]});
+      $( "#topunder" ).draggable({ grid: [ 10, 10 ], cancel: ".allbuttons"});
+      $( "#photosheader" ).draggable({ grid: [ 10, 10 ], cancel: ".allbuttons"});
 
 
       $( "div, p, img, .image, .test" ).disableSelection();

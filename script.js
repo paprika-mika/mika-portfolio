@@ -24,32 +24,38 @@ $(document).ready(function(){
   $("#green").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 255, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
-    document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 79, 251)');
+    document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 70, 0)');
+    $(".pop-up-gone").css({"background-color": "rgb(255, 255, 255)"});
   });
   $("#yellow").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(255, 255, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 0, 255)');
+    $(".pop-up-gone").css({"background-color": "rgb(255, 255, 255)"});
   });
   $("#red").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(255, 70, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
-    document.documentElement.style.setProperty('--yellow-full', 'rgb(171, 171, 171)');
+    document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 255, 0)');
+    $(".pop-up-gone").css({"background-color": "rgb(255, 255, 255)"});
   });
   $("#white").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(255, 255, 255)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
-    document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 0, 255)');
+    document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 79, 251)');
+    $(".pop-up-gone").css({"background-color": "rgb(255, 255, 255)"});
   });
   $("#grey").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 0, 255)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
-    document.documentElement.style.setProperty('--yellow-full', 'rgb(171, 171, 171)');
+    document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 255, 0)');
+    $(".pop-up-gone").css({"background-color": "rgb(255, 255, 255)"});
   });
   $("#black").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(255, 255, 255)');
     document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 0, 0)');
+    $(".pop-up-gone").css({"background-color": "rgb(0, 0, 0)"});
   });
 
 $("#small").click(function(){

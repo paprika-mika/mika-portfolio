@@ -3,7 +3,7 @@
     --font-size-xl: 60pt;
     --font-size-s: 12pt;
     --line-height1: 20pt;
-    --yellow-full: rgb(0,0,255);
+    --yellow-full: rgb(255, 79, 251);
     --white-full: rgb(255, 255, 255);
     --black-full: rgb(0, 0, 0);
 }
@@ -142,7 +142,7 @@ display:none;
   height: 100vh;
   right: 0px;
   z-index: 4;
-  background-color: var(--yellow-full);
+  background-color: rgb(255, 255, 255);
   border-left-style: solid;
   border-color: var(--black-full);
   border-width: 1pt;
@@ -219,7 +219,7 @@ display:none;
 }
 
 .topunder{
-  background-color: var(--yellow-full);
+  background-color: var(--white-full);
   border: 1pt solid var(--black-full);
 
   position: fixed;

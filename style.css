@@ -1,5 +1,6 @@
 :root {
     --font-size-l: 14pt;
+    --font-size-m: 30pt;
     --font-size-xl: 60pt;
     --font-size-s: 12pt;
     --line-height1: 20pt;
@@ -67,21 +68,59 @@ img {
 
 .footer {
   width: 100vw;
-  height: 250px;
-  background-color: var(--white-full);
+  height: auto;
+  background-color: var(--yellow-full);
   border-top: 1pt solid var(--black-full);
+  font-size: var(--font-size-l);
   margin-top: 30px;
 
+  list-style-type: none;
+
 }
 
-.bottomtext{
+.footer > .row-list > .list > li > a{
+  color: var(--white-full);
+  text-decoration: none;
+}
+
+.footer > .row-list > .list > li > p{
+  text-transform: uppercase;
   color: var(--black-full);
-  font-size: var(--font-size-l);
-  text-align: left;
+}
 
+.footer > .row-list > .list > li > a > i{
 
+  float: right;
+}
+
+.footer > .row-list > .list > li{
+  color: var(--white-full);
+  text-decoration: none;
+  border-bottom: 1pt solid var(--white-full);
+  margin-left: 16px;
+
+  line-height: 175%;
 
 }
+
+.list{
+
+  margin-bottom: 50px;
+  width: 49%;
+}
+
+.row-list{
+  width: 50.1%;
+  border-right:1pt solid var(--black-full);
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0pt;
+
+}
+
+
 
 .header{
   width: 100%;

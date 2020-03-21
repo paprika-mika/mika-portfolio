@@ -25,36 +25,41 @@ $(document).ready(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 255, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 70, 0)');
-
+    $(".footer").css({"background-color": "rgb(255, 255, 255)"});
     $(".text2 > a").css({"color": "var(--yellow-full)"});
+    $(".footer > .row-list > .list > li > p").css({"color":"rgb(0,0,0)"});
   });
   $("#yellow").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(255, 255, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 0, 255)');
-
+    $(".footer").css({"background-color": "rgb(255, 255, 255)"});
     $(".text2 > a").css({"color": "var(--yellow-full)"});
+    $(".footer > .row-list > .list > li > p").css({"color":"rgb(0,0,0)"});
   });
   $("#red").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(255, 70, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 255, 0)');
-
+    $(".footer").css({"background-color": "rgb(255, 255, 255)"});
     $(".text2 > a").css({"color": "var(--yellow-full)"});
+    $(".footer > .row-list > .list > li > p").css({"color":"rgb(0,0,0)"});
   });
   $("#white").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(255, 255, 255)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 79, 251)');
-
+    $(".footer").css({"background-color": "rgb(255, 79, 251)"});
     $(".text2 > a").css({"color": "var(--yellow-full)"});
+    $(".footer > .row-list > .list > li > p").css({"color":"rgb(0,0,0)"});
   });
   $("#grey").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 0, 255)');
     document.documentElement.style.setProperty('--black-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 255, 0)');
-
+    $(".footer").css({"background-color": "rgb(255, 255, 255)"});
     $(".text2 > a").css({"color": "var(--yellow-full)"});
+    $(".footer > .row-list > .list > li > p").css({"color":"rgb(0,0,0)"});
   });
   $("#black").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 0, 0)');
@@ -62,7 +67,8 @@ $(document).ready(function(){
     document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 0, 0)');
 
     $(".text2 > a").css({"color": "rgb(255, 255, 255)"});
-
+    $(".footer").css({"background-color": "rgb(255, 255, 255)"});
+    $(".footer > .row-list > .list > li > p").css({"color":"rgb(0,0,0)"});
   });
 
 $("#small").click(function(){
@@ -157,7 +163,7 @@ $("#sticker").click(function(){
 
 
 $(document).ready(function(){
-  $(".image, .menu-button").click(function(){
+  $(".image, .menu-button, .footer > .row-list > .list > li > a").click(function(){
     if ($("#halfcolumn1, #halfcolumn2, #halfcolumn3, #halfcolumn4").hasClass("biggrid")) {
       $("#start").removeClass("pop-up").addClass("pop-up-gone");
       $("#portfolio").removeClass("row").addClass("row-half");

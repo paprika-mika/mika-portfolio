@@ -34,9 +34,6 @@ body {
 
 .background1{
   background-image: url(media/background.png);
-  mix-blend-mode: exclusion;
-
-
 }
 
 .background2{
@@ -74,17 +71,14 @@ img {
   background-color: var(--white-full);
   border-top: 1pt solid var(--black-full);
   margin-top: 30px;
-  position: relative;
+
 }
 
 .bottomtext{
   color: var(--black-full);
-  text-transform: uppercase;
-  font-size: var(--font-size-xl);
-  font-family: Dots, sans-serif;
-  line-height: 50%;
-  text-align: center;
-  margin:auto;
+  font-size: var(--font-size-l);
+  text-align: left;
+
 
 
 }
@@ -142,9 +136,9 @@ display:none;
   height: 100vh;
   right: 0px;
   z-index: 4;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0,0,0);
   border-left-style: solid;
-  border-color: var(--black-full);
+  border-color: rgb(0,0,0);
   border-width: 1pt;
 }
 
@@ -207,7 +201,8 @@ display:none;
 -webkit-text-fill-color: var(--black-full);
 }
 
-#click > a{
+#click{
+  z-index: 30;
 }
 
 #settings{
@@ -402,8 +397,8 @@ z-index: 11;
   width: 400px;
   height: 60%;
 
-  left: 30%;
-  top: 50px;
+  left: 20%;
+  top: 75px;
   z-index: 10;
   visibility:  visible;
 }
@@ -466,13 +461,13 @@ z-index: 11;
 .project{
   display:  inline-block;
   width: 100%;
-  border-bottom: 1pt solid var(--black-full);
+  border-bottom: 1pt solid rgb(255,255,255);
 }
 
 .text{
  width: 100%;
  height: 280px;
- color: var(--black-full);
+ color: rgb(255, 255, 255);
 
  margin-left: 18px;
  margin-top: 12px;
@@ -509,9 +504,9 @@ width: 400px;
 
  color: var(--black-full);
 
- margin-left: 18px;
- margin-top: 12px;
- margin-bottom: 12px;
+ padding: 25px;
+ padding-bottom: 10px;
+
  font-size: var(--font-size-l);
  font-family: "Arial Narrow", Arial, sans-serif;
  line-height: 20px;
@@ -521,6 +516,10 @@ width: 400px;
   text-decoration: underline;
   color: var(--yellow-full);
   width: 100%;
+}
+
+.text2 > p{
+  padding-left: 65px;
 }
 
 
@@ -558,7 +557,7 @@ width: 400px;
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-full);
   border:1pt solid var(--black-full);
 }
 
@@ -755,22 +754,22 @@ background-color: var(--black-full);
 
 }
 
-.column > a, .column-half > a{
+.column > a, .column-half > a, .biggrid > a, .biggrid-half > a{
   color: var(--black-full);
   text-decoration: none;
 }
 
-.column > a:link, .column-half > a:link{
+.column > a:link, .column-half > a:link, .biggrid > a:link, .biggrid-half > a:link{
 text-decoration: none;
 
 }
 
-.column > a:active, .column-half > a:active{
+.column > a:active, .column-half > a:active, .biggrid > a:active, .biggrid-half > a:active{
 text-decoration: none
 color: var(--black-full);
 }
 
-.column > a:visited, .column-half > a:visited{
+.column > a:visited, .column-half > a:visited, .biggrid > a:visited, .biggrid-half > a:visited{
 color: var(--black-full);
 text-decoration: none
 }
@@ -942,12 +941,10 @@ text-decoration: none
     height: 2px;
   }
 
-
   .plus-reverse{
     transform: rotate(0deg);
 
   }
-
 
   .blocktext{
     display: none;

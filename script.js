@@ -10,8 +10,10 @@ $(document).ready(function(){
 });
 
 
+
+
 $(document).ready(function(){
-  $("#settings, #closesettings").click(function(){
+  $("#settings, #closesettings, #settings2").click(function(){
     if ($("#topunder").hasClass("topundergone")){
       $("#topunder").removeClass("topundergone").addClass("topunder");
   } else if ($("#topunder").hasClass("topunder")){
@@ -121,6 +123,7 @@ $("#sticker").click(function(){
     $("#work_18").animate({"left": (-200 + Math.floor(Math.random() * 250)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
     $("#work_19").animate({"left": (-200 + Math.floor(Math.random() * 250)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
     $("#work_20").animate({"left": (-200 + Math.floor(Math.random() * 250)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
+    $(".object").animate({"left": (-200 + Math.floor(Math.random() * 250)) + 'px', "top": (-200 + Math.floor(Math.random() * 400)) + 'px'});
     $("#black").css({"transform": "rotate(" + (-190 + Math.floor(Math.random() * 80)) + "deg)"});
     $("#white").css({"transform": "rotate(" + (-10 + Math.floor(Math.random() * 60)) + "deg)"});
     $("#red").css({"transform": "rotate(" + (-70 + Math.floor(Math.random() * 80)) + "deg)"});
@@ -163,7 +166,7 @@ $("#sticker").click(function(){
 
 
 $(document).ready(function(){
-  $(".image, .menu-button, .footer > .row-list > .list > li > a").click(function(){
+  $(".image, .menu-button, .footer > .row-list > .list > a > li, #contact2").click(function(){
     if ($("#halfcolumn1, #halfcolumn2, #halfcolumn3, #halfcolumn4").hasClass("biggrid")) {
       $("#start").removeClass("pop-up").addClass("pop-up-gone");
       $("#portfolio").removeClass("row").addClass("row-half");
@@ -178,7 +181,8 @@ $(document).ready(function(){
 }
 
 
-  });
+
+});
 
 
 });
@@ -204,20 +208,17 @@ $(document).ready(function(){
   });
 });
 
+
+
+
+
+
 $( function() {
       $( ".block" ).draggable({ grid: [ 10, 10 ], cancel: ".image"});
       $( "#topunder" ).draggable({ grid: [ 10, 10 ], cancel: ".allbuttons"});
       $( "#photosheader" ).draggable({ grid: [ 10, 10 ], cancel: ".allbuttons"});
+      $( ".object" ).draggable({ grid: [ 10, 10 ], cancel: ".allbuttons"});
 
 
       $( "div, p, img, .image, .test" ).disableSelection();
 } );
-
-
-
-var scrollEventHandler = function()
-    {
-      window.scroll(0, window.pageYOffset)
-    }
-
-    window.addEventListener("scroll", scrollEventHandler, false);

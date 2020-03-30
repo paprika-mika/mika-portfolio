@@ -625,7 +625,7 @@ z-index: 11;
  height: 280px;
  color: rgb(255, 255, 255);
 
- margin-left: 18px;
+ padding-left: 18px;
  margin-top: 12px;
  font-size: var(--font-size-l);
  font-family: "Arial Narrow", Arial, sans-serif;
@@ -979,17 +979,7 @@ text-decoration: none
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 970px) {
 
-  #click > a{
-     visibility: hidden;
-  }
-
-  #click > a:after{
-     content:'mika schalks';
-     visibility: visible;
-     display: block;
-    position: absolute;
-    top:0px;
-  }
+  
 
   .topleft{
     margin-left: 2px;
@@ -1044,10 +1034,80 @@ text-decoration: none
 
   .topunder{
     width: 300px;
-    height: 600px;
-    margin: auto;
+    height: 560px;
+    top:100px;
+    left: 100px;
+  }
+
+  #small{
+    width: 56%;
+    height: auto;
+    left: 5%;
+    z-index: 20;
+  }
+
+
+  #sticker{
+    width: 45%;
+    height: auto;
+    right: 8%;
+  }
+
+  #colorbox{
+    width: 88%;
+    height: auto;
+    left: 6%;
+    top:260px;
+  }
+
+  #red{
+    width: 10%;
+    height: auto;
+    left: 15%;
+    top:280px;
+;
+  }
+
+  #yellow{
+    width: 10%;
+    height: auto;
+    left: 27%;
+    top:280px; }
+
+  #green{
+    width: 10%;
+    height: auto;
+    left: 39%;
+    top:280px;
+  }
+
+  #grey{
+    width: 10%;
+    height: auto;
+    left: 51%;
+    top:280px;
+    }
+
+  #black{
+    width: 10%;
+    height: auto;
+    left: 63%;
+    top:280px;
+    }
+
+  #white{
+    width: 10%;
+    height: auto;
+    left: 75%;
+    top:280px;
 
   }
+
+  .crayon{
+    padding-top: 0px;
+  }
+
+
 
   #chaos{
     display: none;
@@ -1058,12 +1118,13 @@ text-decoration: none
   }
 
   .topsmall{
-      top: 5px;
-      right:5px;
-      width: 30px;
-      height:20px;
+      top: 0px;
+      right:0px;
+      width: 0px;
+      height:0px;
       background-color: rgba(0, 0, 0, 0);
       border: none;
+      position: fixed;
   }
 
   .grid{
@@ -1123,7 +1184,7 @@ text-decoration: none
 
 @media screen and (max-width: 600px) {
   #settings{
-    display: none;
+
   }
 
   .topleft{;

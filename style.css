@@ -181,6 +181,7 @@ img {
 .links{
   color: var(--black-full);
   width: 100%;
+  height: auto;
   position: absolute;
   font-size: var(--font-size-l);
   padding:15px;
@@ -303,16 +304,20 @@ display:none;
 
 .topleft{
   z-index: 4;
-  top: 0px;
   position:fixed;
   vertical-align: right;
+
+
+  width: auto;
   margin-left: 15px;
+  text-align: left;
 
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: var(--font-size-xl);
   font-family: Dots, sans-serif;
   line-height: 40pt;
+
 
 }
 
@@ -326,7 +331,7 @@ display:none;
   z-index: 4;
   position:fixed;
   vertical-align: right;
-  top: 0px;
+
   right:0px;
   width: auto;
   margin-right: 15px;
@@ -344,6 +349,7 @@ display:none;
   -webkit-text-stroke-width: 1.2pt;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   -webkit-text-fill-color: rgb(255, 255, 255);
+  vertical-align: top;
 
 }
 
@@ -358,7 +364,7 @@ display:none;
 }
 
 #click{
-  z-index: 30;
+
 }
 
 #settings{
@@ -385,7 +391,7 @@ display:none;
 }
 
 .topunder:hover{
-z-index: 11;
+ z-index: 11;
  box-shadow: 2pt 2pt 0px var(--black-full);
  -moz-box-shadow: 2pt 2pt 0px var(--black-full);
  -webkit-box-shadow: 2pt 2pt 0px var(--black-full);
@@ -977,18 +983,30 @@ text-decoration: none
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 800px) {
 
-  
+  #click > a{
+     visibility: hidden;
+
+
+  }
+
+  #click > a:after{
+     content:'mika';
+     visibility: visible;
+     display: block;
+    position: absolute;
+    top:0px;
+  }
 
   .topleft{
-    margin-left: 2px;
-    margin-top: -3px;
+    margin-left: 10px;
+
 
   }
 
   .topright{
-    margin-right: 2px;
+    margin-right: 10px;
 
   }
 
@@ -1026,10 +1044,7 @@ text-decoration: none
   }
 
   .toptext{
-    margin-top: 7px;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-bottom: 5px;
+
   }
 
   .topunder{
@@ -1183,8 +1198,14 @@ text-decoration: none
 }
 
 @media screen and (max-width: 600px) {
-  #settings{
+  .topunder{
+      top:15px;
+      left:15px;
+  }
 
+  .photos{
+    top:45px;
+    left:15px;
   }
 
   .topleft{;
@@ -1198,8 +1219,8 @@ text-decoration: none
 
 }
 
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 370px) {
   :root {
-      --font-size-xl: 40pt;
+      --font-size-xl: 50pt;
   }
 }

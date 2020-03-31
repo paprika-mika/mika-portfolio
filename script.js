@@ -66,7 +66,7 @@ $(document).ready(function(){
   $("#black").click(function(){
     document.documentElement.style.setProperty('--white-full', 'rgb(0, 0, 0)');
     document.documentElement.style.setProperty('--black-full', 'rgb(255, 255, 255)');
-    document.documentElement.style.setProperty('--yellow-full', 'rgb(0, 0, 0)');
+    document.documentElement.style.setProperty('--yellow-full', 'rgb(255, 79, 251)');
 
     $(".text2 > a").css({"color": "rgb(255, 255, 255)"});
     $(".footer").css({"background-color": "rgb(255, 255, 255)"});

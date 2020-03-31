@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#click, #closephotos").click(function(){
+  $("#click, #closephotos, #myface").click(function(){
     if ($("#photosheader").hasClass("photosgone")){
       $("#photosheader").removeClass("photosgone").addClass("photos");
   } else if ($("#photosheader").hasClass("photos")){
@@ -84,6 +84,8 @@ $("#small").click(function(){
     $("#halfcolumn1, #halfcolumn2, #halfcolumn3, #halfcolumn4").removeClass("colum-half").addClass("biggrid-half");
   }
 });
+
+
 
 $("#sticker").click(function(){
   if ($("body").hasClass("background0")) {

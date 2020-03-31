@@ -27,6 +27,13 @@ body {
   background-color: var(--white-full);
   background-repeat: repeat;
   background-attachment: fixed;
+
+  -webkit-touch-callout: text; /* iOS Safari */
+   -webkit-user-select: text; /* Safari */
+    -khtml-user-select: text; /* Konqueror HTML */
+      -moz-user-select: text; /* Old versions of Firefox */
+       -ms-user-select: text; /* Internet Explorer/Edge */
+           user-select: text;
 }
 
 .object{
@@ -291,6 +298,13 @@ display:none;
   border-left-style: solid;
   border-color: var(--black-full);
   border-width: 1pt;
+
+}
+
+::selection{
+	background-color: var(--yellow-full);
+  color:white;
+
 }
 
 
@@ -628,10 +642,12 @@ z-index: 11;
 
 .text{
  width: 100%;
- height: 280px;
+ min-height: 280px;
  color: rgb(255, 255, 255);
 
  padding-left: 18px;
+ padding-right: 15px;
+ padding-bottom: 50px;
  margin-top: 12px;
  font-size: var(--font-size-l);
  font-family: "Arial Narrow", Arial, sans-serif;
@@ -668,6 +684,7 @@ font-size: var(--font-size-l);
   width: 100%;
 
   color: var(--yellow-full);
+
 }
 
 #about > .text > p:nth-of-type(3){
@@ -682,6 +699,7 @@ font-size: var(--font-size-l);
   text-decoration: none;
   margin-left: 15%;
   width: 80%;
+
 }
 
 #about > .text > p:nth-of-type(5){
@@ -696,6 +714,10 @@ font-size: var(--font-size-l);
   text-decoration: none;
   margin-left: 15%;
   width: 80%;
+}
+
+#about > .text > li:last-of-type{
+  margin-bottom: 100px;
 }
 
 #about > .text > li > a{
@@ -725,19 +747,50 @@ font-size: var(--font-size-l);
 #about > .text{
   height:auto;
   padding-bottom: 15px;
+
+}
+
+#myface{
+  color: var(--yellow-full);
+  margin-top: 15px;
+
+  margin-bottom: 100px;
+}
+
+#myface:hover{
+  text-decoration: underline;
+}
+
+#contact > .text > p:nth-of-type(1){
+  width: 100%;
+
 }
 
 #contact > .text > p:nth-of-type(2){
   margin-left: 0px;
+
 }
 
-#contact > .text > a{
+#contact > .text > p{
+  padding-top: none;
+  padding-bottom: none;
+  margin-top: none;
+  margin-bottom: none;
+  display: block;
+    width: 45%;
+}
+
+
+
+#contact > .text > p > a{
   text-decoration: none;
   color: var(--yellow-full);
-
+  width: 45%;
+  left: 30%;
+  position:  absolute;
 }
 
-#contact > .text > a{
+#contact > .text > a:hover{
   text-decoration: underline;
 }
 
@@ -745,12 +798,31 @@ font-size: var(--font-size-l);
 color: var(--yellow-full);
 }
 
+#contact > .text{
+  height:auto;
+  padding-bottom: 200px;
+}
+
+.project > .text > p > a{
+  color: var(--yellow-full);
+  text-decoration: none;
+}
+
+.project > .text > p > a:hover{
+  color: var(--yellow-full);
+  text-decoration: underline;
+}
+
+.project > .text > p > a:visited{
+  color: var(--yellow-full);
+}
+
 .text2{
  display: inline-flex;
 
  position: relative;
 
- width: 400px;
+ width: 100%;
 
  color: var(--black-full);
 
@@ -1071,13 +1143,26 @@ text-decoration: none
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+
+
+.row > .column{
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+}
+
+.biggrid{
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
 
   #click > a{
      visibility: hidden;
-
-
   }
+
+
 
   #click > a:after{
      content:'mika';
@@ -1292,8 +1377,15 @@ text-decoration: none
   }
 
   .photos{
-    top:45px;
-    left:15px;
+    top:0px;
+    left:0px;
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .blockphoto{
+    width: 90%;
   }
 
   .topleft{;
@@ -1307,8 +1399,27 @@ text-decoration: none
 
 }
 
+.row > .column{
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+}
+
+.biggrid{
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+}
+
 @media screen and (max-width: 370px) {
   :root {
       --font-size-xl: 50pt;
   }
 }
+
+/*
+</br>
+Marecollege, Leiden NL</br>
+Higher General Secondary Education (2011 - 2016)
